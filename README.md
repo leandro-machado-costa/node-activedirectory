@@ -119,7 +119,7 @@ ad.authenticate(username, password, function(err, auth) {
 
 // With Prmomise 
 
-ad.authenticate.then((res) => {
+ad.authenticate(username, password).then((res) => {
   console.log('Authenticated!')
 }, (err) => {
   console.log('Authentication failed!');
